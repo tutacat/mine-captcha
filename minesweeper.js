@@ -68,7 +68,7 @@ function render_minefield(minefield){
             if (Math.random() > display_chance){
                 num = 0;
             }
-            let image_num = Math.floor(Math.random()*2);
+            let image_num = Math.floor(Math.random()*3);
             tile_grid.innerHTML += `<div class=img onclick="select(${j}, ${i}, this)"><img src=img/${num}/${image_num}.jpg></div>`;
         }
     }
