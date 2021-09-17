@@ -1,10 +1,36 @@
+<!--
+Minesweeper Captcha - minesweeper based spam prevention
+Copyright (C) 2021 Jieruei Chang
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Minesweeper Captcha</title>
         <link rel=icon href=assets/logo.jpg>
         <link rel=stylesheet href=style.css>
+
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Minesweeper-based spam detection">
+
+        <meta property="og:image" content="https://knosmos.github.io/mine-captcha/assets/banner.png">
+        <meta property="twitter:image" content="https://knosmos.github.io/mine-captcha/assets/banner.png">
+        <meta property="twitter:card" content="summary_large_image">
     </head>
     <body>
         <div id=captcha-wrapper>
@@ -21,7 +47,7 @@
                     <button id=submit onclick="verification_handler()">VERIFY</button>
                 </div>
             </div>
-            <p>made by <a href="https://github.com/knosmos">knosmos</a> | inspired by <a href="https://xkcd.com/2496/">xkcd</a> | <a href="https://github.com/knosmos/mine-captcha">Source code</a></p>
+            <p>made by <a href="https://github.com/knosmos" target=_blank>knosmos</a> | inspired by <a href="https://xkcd.com/2496/" target=_blank>xkcd</a> | <a href="https://github.com/knosmos/mine-captcha" target=_blank>Source code</a></p>
         </div>
         <script src=minesweeper.js></script>
     </body>

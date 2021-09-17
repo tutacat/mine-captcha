@@ -28,10 +28,17 @@ body{
     padding:5px;
     border-radius:2px;
     background-color:white;
+    box-shadow:0px 0px 60px rgba(99, 99, 99, 0.479);
 }
+
 @media screen and (max-width:800px){
     #captcha{
         width:50%;
+    }
+}
+@media screen and (max-width:700px){
+    #captcha{
+        width:60%;
     }
 }
 @media screen and (max-width:500px){
@@ -101,6 +108,9 @@ body{
     border:none;
     cursor: pointer;
 }
+#submit:hover{
+    background-color:rgb(44, 101, 167);
+}
 
 #new-puzzle{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -110,6 +120,9 @@ body{
     font-size:14pt;
     border:none;
     cursor: pointer;
+}
+#new-puzzle:hover{
+    background-color: rgb(199, 199, 199);
 }
 
 /* TEXT */
@@ -124,4 +137,8 @@ h3{
 hr{
     border:none;
     border-bottom:2px solid var(--border-color);
+}
+
+p, a{
+    color:black;
 }
