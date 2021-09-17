@@ -20,7 +20,11 @@
                 <hr>
                 <button onclick="location.href='index.html'" id=new-puzzle>BACK</button>
             </div>
-            <p>made by <a href="https://github.com/knosmos" target=_blank>knosmos</a> | inspired by <a href="https://xkcd.com/2496/" target=_blank>xkcd</a> | <a href="https://github.com/knosmos/mine-captcha" target=_blank>Source code</a></p>
+            <p>made by <a href="https://github.com/knosmos" target=_blank>knosmos</a> | inspired by <a href="https://xkcd.com/2496/" target=_blank>xkcd</a> | <a href="https://github.com/knosmos/mine-captcha" id="source_url" target=_blank>Source code</a></p>
         </div>
+        <script>
+            splitl = window.location.toString().split("/");
+            document.getElementById("source_url").href = "https://github.com/" + splitl[2].split(".")[0] + "/" + splitl[3];
+        </script>
     </body>
 </html>
