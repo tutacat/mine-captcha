@@ -83,7 +83,7 @@ body{
 }
 
 .img:hover{
-    box-shadow: 0px 0px 0px 10px var(--primary-color);
+    box-shadow: 0px 0px 0px 3px var(--primary-color);
 }
 
 .selected:after {
