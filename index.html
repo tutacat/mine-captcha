@@ -21,34 +21,41 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 <html>
     <head>
         <title>Minesweeper Captcha</title>
-        <link rel=icon href=assets/logo.jpg>
-        <link rel=stylesheet href=style.css>
+        <link rel="icon" href="./assets/logo.jpg">
+        <link rel="stylesheet" href="style.css">
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Minesweeper-based spam detection">
 
-        <meta property="og:image" content="https://knosmos.github.io/mine-captcha/assets/banner.png">
-        <meta property="twitter:image" content="https://knosmos.github.io/mine-captcha/assets/banner.png">
+        <meta property="og:image" content="./assets/banner.png">
+        <meta property="twitter:image" content="./assets/banner.png">
         <meta property="twitter:card" content="summary_large_image">
     </head>
     <body>
-        <div id=captcha-wrapper>
-            <div id=captcha>
-                <div id=captcha-header>
+        <noscript>
+            <p style="color:darkred; text-decoration: under-line; font-size: 16pt;">Please enable JavaScript for this site to function</p>
+        </noscript>
+        <div id="captcha-wrapper">
+            <div id="captcha">
+                <div id="captcha-header">
                     <h3>Select all images with</h3>
                     <h1>mines</h1>
                 </div>
                 <div id=tile-grid>
                 </div>
                 <hr>
-                <div id=captcha-footer>
-                    <button id=new-puzzle onclick="make_minefield()">NEW</button>
-                    <button id=submit onclick="verification_handler()">VERIFY</button>
+                <div id="captcha-footer">
+                    <button id="new-puzzle" onclick="make_minefield()">NEW</button>
+                    <button id="submit" onclick="verification_handler()">VERIFY</button>
                 </div>
             </div>
-            <p>made by <a href="https://github.com/knosmos" target=_blank>knosmos</a> | inspired by <a href="https://xkcd.com/2496/" target=_blank>xkcd</a> | <a href="https://github.com/knosmos/mine-captcha" target=_blank>Source code</a></p>
         </div>
-        <script src=minesweeper.js></script>
+        <p>made by <a href="https://github.com/knosmos" target="_blank">knosmos</a> | inspired by <a href="https://xkcd.com/2496/" target=_blank>xkcd</a> | <a id="source_url" href="https://github.com/knosmos/mine-captcha" target=_blank>Source code</a></p>
+        <script src="./minesweeper.js"></script>
+        <script>
+            splitl = window.location.toString().split("/");
+            document.getElementById("source_url").href = ["https://github.com", splitl[2].split(".")[0], splitl[3]].join("/");
+        </script>
     </body>
 </html>
